@@ -1,69 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- SEO = Básico -->
-    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- SEO = Básico -->
+        <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
 
-    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-    <meta property="og:title" content="Título de tu página" />
-    <meta property="og:description" content="Descripción de tu página" />
-    <meta
-      property="og:image"
-      content="URL de la imagen que quieres mostrar en las redes sociales"
-    />
-    <meta property="og:url" content="URL de tu página" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Título de tu página" />
-    <meta name="twitter:description" content="Descripción de tu página" />
-    <meta
-      name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
-    />
+        <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+        <meta property="og:title" content="Título de tu página" />
+        <meta property="og:description" content="Descripción de tu página" />
+        <meta
+            property="og:image"
+            content="URL de la imagen que quieres mostrar en las redes sociales"
+        />
+        <meta property="og:url" content="URL de tu página" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Título de tu página" />
+        <meta name="twitter:description" content="Descripción de tu página" />
+        <meta
+            name="twitter:image"
+            content="URL de la imagen que quieres mostrar en Twitter"
+        />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+        <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+        <link rel="manifest" href="site.webmanifest" />
+        <!-- icono de acceso para IOS -->
+        <link rel="apple-touch-icon" href="icon.png" />
+        <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/style.css" />
-    
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-    <!-- Código de las plataformas de Análisis -->
-    <script></script>
-    <!-- Scripts a cargar antes de la renderización -->
-    <script src="preloader.js"></script>
-  </head>
-  <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
-      </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
-    </div>
+        <!-- links de estilos -->
+        <link rel="stylesheet" href="css/style.css" />
 
-  </body>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Se cambia el tema de algunos navegadores -->
+        <meta name="theme-color" content="#fafafa" />
+        <!-- Código de las plataformas de Análisis -->
+        <script></script>
+        <!-- Scripts a cargar antes de la renderización -->
+        <script src="preloader.js"></script>
+    </head>
+    <body>
+        <header class="header" id="inicio">
+            <img src="svg/hamburguesa.svg" alt="" class="hamburger" />
+            <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Servicio</a>
+                <a href="#portafolio">Galería</a>
+                <a href="#expertos">Expertos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="contenedor head">
+                <h1 class="titulo">Convertimos tus sueños en realidad</h1>
+                <p class="copy">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+            </div>
+        </header>
+
+        <main>
+            <section class="contenedor" id="servicio">
+                <h2 class="subtitulo">Nuestro servicio</h2>
+                <div class="contenedor-servicio">
+                    <img src="svg/isometric-cuatro.svg" alt="" />
+                    <div class="checklist-servicio">
+                        <div class="service">
+                            <h3 class="n-service">
+                                <span class="number">1</span>Diseño web
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perspiciatis optio fugit nisi
+                                omnis veniam. Unde, accusantium animi! Aut,
+                                sapiente nulla!
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class="n-service">
+                                <span class="number">2</span>Diseño web
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perspiciatis optio fugit nisi
+                                omnis veniam. Unde, accusantium animi! Aut,
+                                sapiente nulla!
+                            </p>
+                        </div>
+                        <div class="service">
+                            <h3 class="n-service">
+                                <span class="number">3</span>Diseño web
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Perspiciatis optio fugit nisi
+                                omnis veniam. Unde, accusantium animi! Aut,
+                                sapiente nulla!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery" id="portafolio">
+                <div class="contenedor">
+                    <h2 class="subtitulo">Galeria</h2>
+                    <div class="contenedor-galeria">
+                        <img
+                            src="img/desktop/imagen-uno.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                        <img
+                            src="img/desktop/imagen-dos.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                        <img
+                            src="img/desktop/imagen-tres.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                        <img
+                            src="img/desktop/imagen-cuatro.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                        <img
+                            src="img/desktop/imagen-cinco.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                        <img
+                            src="img/desktop/imagen-seis.avif"
+                            class="img-galeria"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="imagen-light">
+              <img src="svg/close.svg" alt="" class="close">
+              <img src="img/desktop/imagen-siete.avif" alt="" class="agregar-imagen">
+            </section>
+            <section class="contenedor" id="expertos">
+              <h2 class="subtitulo">Expertos en:</h2>
+              <section class="experts">
+                <div class="cont-expert">
+                  <img src="svg/isometric-cinco.svg" alt="">
+                  <h3 class="n-expert">Analytics</h3>
+                </div>
+                <div class="cont-expert">
+                  <img src="svg/isometric-cuatro.svg" alt="">
+                  <h3 class="n-expert">Seo</h3>
+                </div>
+                <div class="cont-expert">
+                  <img src="svg/isometric-tres.svg" alt="">
+                  <h3 class="n-expert">Security</h3>
+                </div>
+              </section>
+            </section>
+        </main>
+
+        <footer id="contacto">
+            <div class="contenedor footer-content">
+              <div class="contact-us">
+                <h2 class="brand">LuisCG Design</h2>
+                <p class="parrafo__footer">Somos expertos en la creación de tus sueños</p>
+              </div>
+              <div class="social-media">
+                <a href="" class="social-media-icon">
+                  <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="" class="social-media-icon">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="" class="social-media-icon">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="line"></div>
+        </footer>
+
+
+
+        <script src="js/menu.js"></script>
+        <script src="js/lightbox.js"></script>
+    </body>
 </html>
